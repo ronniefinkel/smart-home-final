@@ -1,0 +1,72 @@
+<!--side menu for user for his actions options-->
+<ion-header>
+
+</ion-header>
+<ion-menu id="myMenu" [content]="nav">
+  <ion-header>
+
+    <ion-toolbar color="secondary">
+      <ion-title class="mt">menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+  <ion-list>
+
+    <ion-item  (click)="onLoad(home)">
+      <ion-icon name="speedometer"></ion-icon>
+      Dashboard
+    </ion-item>
+
+    <ion-item (click)="onLoad(home)">
+      <ion-icon name="pie"></ion-icon>
+      Charts
+    </ion-item>
+    <ion-item (click)="onLoad(home)">
+      <ion-icon name="flash"></ion-icon>
+     Actions
+    </ion-item>
+    <ion-item (click)="onLoad(home)">
+      <ion-icon name="git-network"></ion-icon>
+      Devices
+    </ion-item>
+    <ion-item (click)="onLoad(home)">
+      <ion-icon name="pin"></ion-icon>
+      Locations
+    </ion-item>
+    <ion-item *ngIf="!test"  (click)="onLoad(home)">
+      <ion-icon name="people"></ion-icon>
+     Users
+    </ion-item>
+
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Quick Actions
+    </ion-list-header>
+    <ion-item *ngIf="!test"  (click)="onLoad(home)">
+      <ion-icon name="git-branch"></ion-icon>
+      Add Device
+    </ion-item>
+    <ion-item *ngIf="!test" (click)="onLoad(start)">
+      <ion-icon name="add"></ion-icon>
+      Add action
+    </ion-item>
+    <ion-item *ngIf="!test" (click)="onLoad(home)">
+      <ion-icon name="add"></ion-icon>
+      Add Location
+    </ion-item>
+    <ion-item *ngIf="!test"  (click)="onLoad(home)">
+      <ion-icon name="person-add"></ion-icon>
+       User Management
+    </ion-item>
+    <ion-item   (click)="onLoad(home)">
+      <ion-icon name="log-out"></ion-icon>
+      Logout
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+</ion-menu>
+<ion-nav [root]="start" #nav></ion-nav>
+

@@ -1,0 +1,57 @@
+page-home {
+  h1,ion-card-header,ion-footer{
+    text-align: center;
+  }
+  .bghome{
+    background-image: url("../../assets/imgs/index-bg.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .bgstar{
+    width: 40%;
+  }
+  h1{
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
+
+}
+.btcolor{
+  color: black;
+  background-color: whitesmoke;
+  opacity: 0.8;
+}
+
+.txtype{
+  text-align: center;
+  color: white;
+  font-size: large;
+}
+p.linkpossition{
+  position: fixed;
+  bottom:auto;
+  right: 100px;
+  color: red;
+  font-size: medium;
+}
+  .no-scroll .noscoroll-content{
+    overflow: hidden;
+  }
+
+.bgitem{
+  background-color: rgba(255,255,255,0.0);
+  color: #ebebeb;
+  
+  
+}
+.btnsignin{
+  width:90%;
+  
+}
+.list{
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}

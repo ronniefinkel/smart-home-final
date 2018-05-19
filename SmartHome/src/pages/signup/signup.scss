@@ -1,0 +1,17 @@
+page-signup {
+    h1,ion-card-header,ion-footer{
+        text-align: center;
+      }
+.bghome{
+    background-image: url("../../assets/imgs/index-bg.jpg");
+    background-repeat: no-repeat;
+}
+h1{
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
+  .no-scroll .noscoroll-content{
+    overflow: hidden;
+  }
+}
